@@ -39,65 +39,80 @@ const ContactForm = () => {
             href="https://wa.me/5500000000000"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#22c55e] transition-colors duration-300 mb-8"
+            className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#22c55e] transition-all duration-300 mb-12 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
-            <MessageCircle className="w-5 h-5" />
+            <MessageCircle className="w-6 h-6" />
             Fale Conosco no WhatsApp
           </a>
 
           {/* Form */}
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="grid md:grid-cols-2 gap-4">
-              <input
-                type="text"
-                name="name"
-                placeholder="Nome Completo"
-                value={formData.name}
+          <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-2 text-left">
+                <label htmlFor="name" className="text-sm font-semibold text-gray-700 ml-1">Nome Completo</label>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#0B1120] focus:border-transparent outline-none transition-all duration-200"
+                  required
+                />
+              </div>
+              <div className="space-y-2 text-left">
+                <label htmlFor="email" className="text-sm font-semibold text-gray-700 ml-1">E-mail Corporativo</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#0B1120] focus:border-transparent outline-none transition-all duration-200"
+                  required
+                />
+              </div>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-2 text-left">
+                <label htmlFor="company" className="text-sm font-semibold text-gray-700 ml-1">Empresa</label>
+                <input
+                  id="company"
+                  type="text"
+                  name="company"
+                  value={formData.company}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#0B1120] focus:border-transparent outline-none transition-all duration-200"
+                  required
+                />
+              </div>
+              <div className="space-y-2 text-left">
+                <label htmlFor="phone" className="text-sm font-semibold text-gray-700 ml-1">Telefone</label>
+                <input
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#0B1120] focus:border-transparent outline-none transition-all duration-200"
+                  required
+                />
+              </div>
+            </div>
+            <div className="space-y-2 text-left">
+              <label htmlFor="message" className="text-sm font-semibold text-gray-700 ml-1">Mensagem</label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
                 onChange={handleChange}
-                className="input-field bg-background"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail Corporativo"
-                value={formData.email}
-                onChange={handleChange}
-                className="input-field bg-background"
-                required
+                rows={4}
+                className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#0B1120] focus:border-transparent outline-none transition-all duration-200 resize-none"
               />
             </div>
-            <div className="grid md:grid-cols-2 gap-4">
-              <input
-                type="text"
-                name="company"
-                placeholder="Empresa"
-                value={formData.company}
-                onChange={handleChange}
-                className="input-field bg-background"
-                required
-              />
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Telefone"
-                value={formData.phone}
-                onChange={handleChange}
-                className="input-field bg-background"
-                required
-              />
-            </div>
-            <textarea
-              name="message"
-              placeholder="Mensagem"
-              value={formData.message}
-              onChange={handleChange}
-              rows={4}
-              className="input-field bg-background resize-none"
-            />
             <Button
               type="submit"
-              className="w-full btn-teal py-6 text-base font-semibold rounded-lg"
+              className="w-full bg-[#0B1120] hover:bg-[#1a2333] text-white py-6 text-lg font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               ENVIAR MENSAGEM
             </Button>

@@ -12,26 +12,31 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <span className="text-2xl font-bold text-primary">ARCE</span>
-            <span className="text-sm text-muted-foreground font-medium">EMPRESAS</span>
+            <span className="text-2xl font-bold text-[#0B1120]">
+              <span className="text-[#84cc16]">A</span>RCE
+            </span>
+            <span className="text-sm text-gray-600 font-medium tracking-wide uppercase mt-1">EMPRESAS</span>
           </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-sm font-medium text-foreground hover:text-secondary transition-colors duration-200"
-              >
-                {link.label}
-              </a>
-            ))}
+            <a href="#pilares" className="text-sm font-bold text-[#0B1120] hover:text-[#84cc16] transition-colors">
+              Pilares
+            </a>
+            <a href="#diferenciais" className="text-sm font-bold text-[#0B1120] hover:text-[#84cc16] transition-colors">
+              Diferenciais
+            </a>
+            <a href="#sindicatos" className="text-sm font-bold text-[#0B1120] hover:text-[#84cc16] transition-colors">
+              Sindicatos
+            </a>
+            <a href="#contato" className="text-sm font-bold text-[#0B1120] hover:text-[#84cc16] transition-colors">
+              Área do Cliente
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}

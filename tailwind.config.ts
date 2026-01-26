@@ -47,6 +47,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        arce: {
+          navy: "#0B1120",
+          lime: "#84cc16",
+          white: "#ffffff",
+          gray: "#f8fafc",
+        },
         navy: "hsl(var(--navy))",
         teal: "hsl(var(--teal))",
         sidebar: {
