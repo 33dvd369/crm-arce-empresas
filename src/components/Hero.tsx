@@ -9,18 +9,18 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="animate-fade-in relative z-10">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6 text-white">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6 text-white">
               A Gestão que <span className="text-[#84cc16]">Humaniza</span>
               <br />
               e <span className="text-[#84cc16]">Protege</span> seu Negócio
             </h1>
-            <p className="text-lg text-gray-300 mb-8 max-w-xl">
+            <p className="text-base sm:text-lg text-gray-300 mb-8 max-w-xl">
               Assistência funeral B2B focada em suporte operacional ativo e cuidado psicológico.
               Zero burocracia para o RH, amparo total para a equipe.
             </p>
             <Button
               size="lg"
-              className="bg-[#84cc16] text-[#0B1120] hover:bg-[#a3e635] rounded-full px-8 py-6 text-base font-bold group transition-all duration-300"
+              className="w-full sm:w-auto bg-[#84cc16] text-[#0B1120] hover:bg-[#a3e635] rounded-full px-8 py-6 text-base font-bold group transition-all duration-300 shadow-[0_0_20px_rgba(132,204,22,0.3)] hover:shadow-[0_0_30px_rgba(132,204,22,0.5)]"
             >
               Falar com Especialista
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

@@ -12,10 +12,10 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="mb-8">
+          <div className="mb-8 flex flex-col sm:flex-row items-center justify-center gap-6">
             <a
               href="tel:08000000000"
-              className="inline-flex items-center gap-3 text-xl font-bold text-white hover:text-[#84cc16] transition-colors"
+              className="inline-flex items-center gap-3 text-xl font-bold text-white hover:text-[#84cc16] transition-colors py-2"
             >
               <Phone className="w-5 h-5 text-[#84cc16]" />
               0800 000 0000

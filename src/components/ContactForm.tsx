@@ -56,7 +56,7 @@ const ContactForm = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#0B1120] focus:border-transparent outline-none transition-all duration-200"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-base focus:ring-2 focus:ring-[#0B1120] focus:border-transparent outline-none transition-all duration-200"
                   required
                 />
               </div>
@@ -68,7 +68,7 @@ const ContactForm = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#0B1120] focus:border-transparent outline-none transition-all duration-200"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-base focus:ring-2 focus:ring-[#0B1120] focus:border-transparent outline-none transition-all duration-200"
                   required
                 />
               </div>
@@ -82,7 +82,7 @@ const ContactForm = () => {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#0B1120] focus:border-transparent outline-none transition-all duration-200"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-base focus:ring-2 focus:ring-[#0B1120] focus:border-transparent outline-none transition-all duration-200"
                   required
                 />
               </div>
@@ -94,7 +94,7 @@ const ContactForm = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#0B1120] focus:border-transparent outline-none transition-all duration-200"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-base focus:ring-2 focus:ring-[#0B1120] focus:border-transparent outline-none transition-all duration-200"
                   required
                 />
               </div>
@@ -107,7 +107,7 @@ const ContactForm = () => {
                 value={formData.message}
                 onChange={handleChange}
                 rows={4}
-                className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#0B1120] focus:border-transparent outline-none transition-all duration-200 resize-none"
+                className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-base focus:ring-2 focus:ring-[#0B1120] focus:border-transparent outline-none transition-all duration-200 resize-none"
               />
             </div>
             <Button
