@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
+import logoArce from "@/assets/logo-arce.png";
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -16,11 +18,15 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <span className="text-2xl font-bold text-[#0B1120]">
+          <a href="#" className="flex items-center gap-3 group">
+            <span className="text-3xl lg:text-4xl font-extrabold text-[#0B1120] tracking-tight relative">
               <span className="text-[#84cc16]">A</span>RCE
+              <span className="absolute -bottom-1 left-0 w-full h-1 bg-[#84cc16] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </span>
-            <span className="text-sm text-gray-600 font-medium tracking-wide uppercase mt-1">EMPRESAS</span>
+            <span className="h-8 w-[1px] bg-gray-300 mx-1"></span>
+            <span className="text-sm lg:text-base text-gray-500 font-semibold tracking-[0.2em] uppercase">
+              Empresas
+            </span>
           </a>
 
           {/* Desktop Navigation */}
