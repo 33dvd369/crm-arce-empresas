@@ -54,24 +54,24 @@ const Differentials = () => {
         <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* ARCE Card */}
           <div className="comparison-card bg-[#0B1120] text-white border-2 border-[#84cc16] flex flex-col relative overflow-hidden transform hover:-translate-y-1 transition-transform duration-300 rounded-3xl">
-            <div className="mb-8 text-center pt-4">
-              <h3 className="text-[#84cc16] text-2xl font-bold uppercase tracking-wide mb-1">
+            <div className="mb-6 text-center pt-6 px-4">
+              <h3 className="text-[#84cc16] text-xl font-bold uppercase tracking-wide mb-1">
                 ASSISTÊNCIA ARCE
               </h3>
-              <p className="text-white text-lg font-medium">
+              <p className="text-white text-base font-medium opacity-90">
                 Modelo Ativo e Operacional
               </p>
             </div>
 
-            <div className="space-y-6 flex-grow px-2">
+            <div className="space-y-5 flex-grow px-6">
               {arceFeatures.map((feature, index) => (
                 <div key={index} className="flex gap-4 items-start">
                   <div className="mt-1 bg-[#84cc16] rounded-full p-0.5 shrink-0">
-                    <Check className="w-4 h-4 text-[#0B1120] stroke-[3]" />
+                    <Check className="w-3.5 h-3.5 text-[#0B1120] stroke-[3]" />
                   </div>
                   <div>
-                    <span className="font-bold text-white block mb-1 text-[15px]">{feature.title}</span>
-                    <span className="text-gray-300 text-sm leading-relaxed block">
+                    <span className="font-bold text-white block mb-1 text-sm">{feature.title}</span>
+                    <span className="text-gray-300 text-xs leading-relaxed block">
                       {feature.description}
                     </span>
                   </div>
@@ -79,9 +79,9 @@ const Differentials = () => {
               ))}
             </div>
 
-            <div className="mt-8 pt-4">
-              <div className="bg-white rounded-2xl py-4 px-6 text-center shadow-lg mx-4 mb-4">
-                <p className="text-[#0F172A] font-bold text-sm md:text-base">
+            <div className="mt-8 pt-4 pb-2">
+              <div className="bg-white rounded-xl py-3 px-5 text-center shadow-lg mx-6 mb-6">
+                <p className="text-[#0F172A] font-bold text-sm">
                   Resultado: Amparo real e valorização do colaborador.
                 </p>
               </div>
@@ -90,22 +90,22 @@ const Differentials = () => {
 
           {/* Traditional Card */}
           <div className="comparison-card bg-[#64748B] text-white border border-gray-400 flex flex-col relative overflow-hidden rounded-3xl">
-            <div className="mb-8 text-center pt-4">
-              <h3 className="text-white text-2xl font-bold uppercase tracking-wide mb-1">
+            <div className="mb-6 text-center pt-6 px-4">
+              <h3 className="text-white text-xl font-bold uppercase tracking-wide mb-1">
                 SEGURO TRADICIONAL
               </h3>
-              <p className="text-gray-100 text-lg font-medium">
+              <p className="text-gray-100 text-base font-medium opacity-90">
                 Auxílio / Reembolso Financeiro
               </p>
             </div>
 
-            <div className="space-y-6 flex-grow px-2">
+            <div className="space-y-5 flex-grow px-6">
               {traditionalFeatures.map((feature, index) => (
                 <div key={index} className="flex gap-4 items-start">
-                  <div className="mt-2 w-2 h-2 rounded-full bg-white shrink-0" />
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-white shrink-0" />
                   <div>
-                    <span className="font-bold text-white block mb-1 text-[15px]">{feature.title}</span>
-                    <span className="text-gray-100 text-sm leading-relaxed block">
+                    <span className="font-bold text-white block mb-1 text-sm">{feature.title}</span>
+                    <span className="text-gray-100 text-xs leading-relaxed block">
                       {feature.description}
                     </span>
                   </div>
@@ -113,9 +113,9 @@ const Differentials = () => {
               ))}
             </div>
 
-            <div className="mt-8 pt-4">
-              <div className="bg-gray-300 rounded-2xl py-4 px-6 text-center shadow-lg mx-4 mb-4">
-                <p className="text-[#0F172A] font-bold text-sm md:text-base">
+            <div className="mt-8 pt-4 pb-2">
+              <div className="bg-gray-300 rounded-xl py-3 px-5 text-center shadow-lg mx-6 mb-6">
+                <p className="text-[#0F172A] font-bold text-sm">
                   Resultado: Estresse administrativo e financeiro.
                 </p>
               </div>

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-[#0A1628] overflow-hidden">
+    <section className="relative h-auto lg:h-screen lg:max-h-[900px] flex items-center bg-[#0A1628] overflow-hidden pt-20 lg:pt-0">
       {/* Background Texture/Grain */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] bg-repeat mix-blend-overlay"></div>
 
@@ -13,10 +13,10 @@ const Hero = () => {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#84cc16]/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#0A1628] rounded-full blur-[100px] translate-y-1/2 -translate-x-1/4" />
 
-      <div className="container mx-auto px-4 relative z-10 grid lg:grid-cols-12 gap-8 items-center">
+      <div className="container mx-auto px-4 relative z-10 grid lg:grid-cols-12 gap-8 items-center h-full">
 
         {/* Text Content - Spans 7 cols on Desktop */}
-        <div className="lg:col-span-7 flex flex-col justify-center pt-32 lg:pt-0 pb-12 lg:pb-0 text-center lg:text-left">
+        <div className="lg:col-span-7 flex flex-col justify-center pb-12 lg:pb-0 text-center lg:text-left">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -28,11 +28,11 @@ const Hero = () => {
               Solução Corporativa Preferida
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.2] lg:leading-[1.1] tracking-tight text-white text-balance">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.2] lg:leading-[1.1] tracking-tight text-white text-balance">
               A Gestão que <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#84cc16] to-[#a3e635]">Humaniza</span> o seu Negócio
             </h1>
 
-            <p className="text-sm md:text-lg text-gray-400 max-w-xl leading-relaxed mx-auto lg:mx-0">
+            <p className="text-base md:text-xl text-gray-400 max-w-xl leading-relaxed mx-auto lg:mx-0">
               Assistência funeral B2B que transforma o cuidado em diferencial competitivo. Zero burocracia para o RH, amparo total para a equipe.
             </p>
 
@@ -56,12 +56,12 @@ const Hero = () => {
         </div>
 
         {/* Image Content - Spans 5 cols but overlaps/floats */}
-        <div className="lg:col-span-12 lg:absolute lg:right-0 lg:h-full lg:w-[45%] flex items-end justify-center lg:justify-end mt-12 lg:mt-0 pointer-events-none">
+        <div className="lg:col-span-12 lg:absolute lg:right-0 lg:h-full lg:w-[50%] flex items-end justify-center lg:justify-end mt-12 lg:mt-0 pointer-events-none">
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative w-full max-w-md lg:max-w-none lg:h-[90%] lg:mr-[-5%] overflow-hidden"
+            className="relative w-full max-w-lg lg:max-w-none lg:h-full lg:mr-0 overflow-hidden"
           >
             {/* Image Mask/Cropping for sharp look */}
             <div className="relative h-full w-full">
@@ -71,7 +71,7 @@ const Hero = () => {
               <img
                 src={heroImage}
                 alt="Executiva de Negócios"
-                className="w-full h-full object-cover object-top lg:object-contain drop-shadow-2xl grayscale-[20%] contrast-[1.1]"
+                className="w-full h-full object-cover object-top drop-shadow-2xl grayscale-[20%] contrast-[1.1]"
               />
             </div>
           </motion.div>
