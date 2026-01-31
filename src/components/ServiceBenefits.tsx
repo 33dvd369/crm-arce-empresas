@@ -1,15 +1,11 @@
 import {
     FileText,
-    Smartphone,
-    Users,
-    UserPlus,
     Laptop,
     UserCheck,
     Headset,
     BarChart,
     FileCheck,
     Star,
-    Sliders,
     MapPin
 } from "lucide-react";
 
@@ -18,18 +14,9 @@ const benefits = [
         icon: FileText,
         text: "Contrato sem restrições de modalidade de trabalho (CLT /PJ)",
     },
-    {
-        icon: Smartphone,
-        text: "Comunicados de óbitos via fone, e-mail, SMS ou WhatsApp",
-    },
-    {
-        icon: Users,
-        text: "Benefício extensivo aos familiares sem limitação de idade ou grau de parentesco",
-    },
-    {
-        icon: UserPlus,
-        text: "Contratação a partir de 05 vidas",
-    },
+
+
+
     {
         icon: Laptop,
         text: "Movimentação eletrônica de vida",
@@ -54,10 +41,7 @@ const benefits = [
         icon: Star,
         text: "Benefícios em vida",
     },
-    {
-        icon: Sliders,
-        text: "Plano totalmente customizável e flexível",
-    },
+
     {
         icon: MapPin,
         text: "Atendimento em todo território nacional",

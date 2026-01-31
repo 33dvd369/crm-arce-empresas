@@ -16,23 +16,23 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10 grid lg:grid-cols-12 gap-8 items-center">
 
         {/* Text Content - Spans 7 cols on Desktop */}
-        <div className="lg:col-span-7 flex flex-col justify-center pt-24 lg:pt-0 pb-12 lg:pb-0 text-center lg:text-left">
+        <div className="lg:col-span-7 flex flex-col justify-center pt-32 lg:pt-0 pb-12 lg:pb-0 text-center lg:text-left">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="space-y-6 lg:pr-12"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#84cc16] text-sm font-medium mb-2 lg:mb-4 mx-auto lg:mx-0">
-              <span className="w-2 h-2 rounded-full bg-[#84cc16] animate-pulse"></span>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/5 border border-white/10 text-[#84cc16] text-xs font-medium mb-6 mx-auto lg:mx-0 tracking-wider uppercase">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#84cc16] animate-pulse"></span>
               Solução Corporativa Preferida
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.2] lg:leading-[1.1] tracking-tight text-white text-balance">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.2] lg:leading-[1.1] tracking-tight text-white text-balance">
               A Gestão que <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#84cc16] to-[#a3e635]">Humaniza</span> o seu Negócio
             </h1>
 
-            <p className="text-base md:text-xl text-gray-400 max-w-xl leading-relaxed mx-auto lg:mx-0">
+            <p className="text-sm md:text-lg text-gray-400 max-w-xl leading-relaxed mx-auto lg:mx-0">
               Assistência funeral B2B que transforma o cuidado em diferencial competitivo. Zero burocracia para o RH, amparo total para a equipe.
             </p>
 
