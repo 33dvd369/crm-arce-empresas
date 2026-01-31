@@ -4,14 +4,14 @@ const benefits = [
   { icon: Handshake, label: "PARCERIA" },
   { icon: Shield, label: "PROTEÇÃO" },
   { icon: Users, label: "ASSOCIAÇÃO" },
-  { icon: Star, label: "VALOR" },
+  { icon: Star, label: "PRONTIDÃO" },
 ];
 
 const features = [
   "Imagem Institucional",
   "Fidelidade de Associado",
-  "Categorias de Risco",
   "Alto Padrão",
+  "Sem Burocracia",
 ];
 
 const Partnership = () => {

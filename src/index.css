@@ -101,6 +101,10 @@
   .hero-section {
     @apply relative bg-[#0B1120] text-white;
   }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
 
   .btn-lime {
     @apply bg-[#84cc16] text-[#0B1120] hover:bg-[#a3e635] transition-all duration-300 font-semibold;

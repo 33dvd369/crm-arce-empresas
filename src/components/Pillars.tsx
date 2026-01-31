@@ -4,9 +4,9 @@ const pillars = [
   {
     icon: FileText,
     title: "BUROCRÁTICO",
-    subtitle: "Gestão Completa e Assistência Ativa",
+    subtitle: "Gestão Completa e Suporte 24h",
     description:
-      "Eliminação do sistema de reembolso. Infraestrutura própria.",
+      "Eliminação do sistema de reembolso. Infraestrutura própria com Central de assistência disponível 24 horas para assumir todos os trâmites operacionais e logísticos, garantindo agilidade e suporte imediato.",
   },
   {
     icon: Heart,
@@ -26,7 +26,7 @@ const pillars = [
 
 const Pillars = () => {
   return (
-    <section id="pilares" className="py-20 bg-background">
+    <section id="pilares" className="py-12 md:py-20 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl lg:text-4xl font-bold text-center text-foreground mb-12">
           Nossos Pilares
